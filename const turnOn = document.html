@@ -1,0 +1,20 @@
+const turnOn = document.getElementById ('turnOn);//Indentifica O elemento html pelo id
+const turnOff = document.getElementById ('turnOff');//Identifica O elemento html pelo id
+const lamp = document.getElementById ('lamp');//Indentifica O elemento html pelo id
+
+function lampOn(){   //liga a lampada
+        lamp.src = './img/ligada'
+} 
+
+functionn lampOnff(){   //desliga a lampada 
+        lamp.src ='./img/desligada.jpg';
+}
+
+function lamBroken(){ //quebra a lampada
+        lamp.src = './img/quebrada.jpg'
+}
+turnOn.addEventListener ('mousedown', lampOn); //Liga lampada no botao
+turnOff.addEventListener ('mouseup', lampOn); //Desliga lampada no botao
+lamp.addEventListener ('mouseover', lampOn); // Ascende lampada quando passa mouse
+lamp.addEventListener ('mouseleave', lampOff); // Desliga lampada quando tira mouse
+lamp.addEventListener ('dblclick', lamBroken); // quebra a lampada com duplo click
